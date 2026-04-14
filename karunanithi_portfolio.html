@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karunanithi Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico?v=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;family=Syne:wght@400;600;700;800&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="custom-cursor" id="cursor"></div>
+  <div class="custom-cursor-ring" id="cursorRing"></div>
+
+  <div class="color-bar">
+    <div style="background:#CEB1FF"></div>
+    <div style="background:#D1F405"></div>
+    <div style="background:#76ED6D"></div>
+    <div style="background:#08EDD5"></div>
+    <div style="background:#0A0A0A"></div>
+    <div style="background:#F9F9F9"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="karu-nav">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="d-lg-inline d-none"><img src="img/white.png" alt="logo" width="80" class="site-logo"></div>
+      <div class="d-lg-none d-inline"><img src="img/white.png" alt="logo" width="50" class="site-logo"></div>
+
+      <div class="d-none d-md-flex align-items-center">
+        <a href="#skills" class="nav-link-item">Skills</a>
+        <a href="#gallery" class="nav-link-item">Gallery</a>
+        <a href="#experience" class="nav-link-item">Experience</a>
+        <a href="#projects" class="nav-link-item">Projects</a>
+        <a href="#contact" class="nav-link-item">Contact</a>
+      </div>
+      <button class="theme-btn" id="themeToggle">◐ Toggle Theme</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="hero-badge reveal">
+            <span class="dot"></span>
+            Available
+          </div>
+          <h1 class="hero-name reveal">
+            <span class="d-block">KARU</span>
+            <span class="d-block line-cyan">NANITHI</span>
+          </h1>
+          <p class="hero-role"><span id="typewriter-role"></span><span class="blink-cursor">|</span></p>
+          <p class="hero-desc reveal" style="min-height: 80px;">
+            <span id="typewriter-desc"></span>
+          </p>
+          <div class="reveal">
+            <a href="#projects" class="btn-primary-karu">View Projects</a>
+            <a href="#contact" class="btn-outline-karu">Get In Touch</a>
+          </div>
+          <div class="d-flex gap-4 mt-5 reveal">
+            <div>
+              <div style="font-size:1.8rem;font-weight:800;color:var(--c-cyan)">2.5+</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);font-family:Space Mono,monospace">Yrs Experience
+              </div>
+            </div>
+            <div style="width:1px;background:var(--border-col)"></div>
+            <div>
+              <div style="font-size:1.8rem;font-weight:800;color:var(--c-lavender)">4+</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);font-family:Space Mono,monospace">Projects Shipped
+              </div>
+            </div>
+            <div style="width:1px;background:var(--border-col)"></div>
+            <div>
+              <div style="font-size:1.8rem;font-weight:800;color:var(--c-lime)">15+</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);font-family:Space Mono,monospace">Tech Stack</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="hero-photo-wrap reveal">
+            <div class="">
+              <img src="img/banner.png" width="550" class="d-lg-inline d-none z-n1 banner-img" alt="banner">
+              <img src="img/banner.png" width="350" class="d-lg-none d-inline z-n1 banner-img" alt="banner">
+            </div>
+            <div class="photo-accent-1 d-lg-inline d-none"></div>
+            <div class="photo-accent-2 d-lg-inline d-none"></div>
+            <div class="photo-tag">
+              <span class="num">2.5+</span>
+              Years in UI/UX
+            </div>
+            <div class="photo-tag-2">Blockchain UX Expert</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCROLL MARQUEE ANIMATION -->
+  <section class="scroll-text-section overflow-hidden py-4"
+    style="border-top: 1px solid var(--border-col); border-bottom: 1px solid var(--border-col); background: var(--c-dark);">
+    <div class="scroll-text-wrapper" style="white-space: nowrap;">
+      <h2 class="massive-text"
+        style="font-size: clamp(3rem, 8vw, 6rem); font-weight: 800; text-transform: uppercase; margin: 0; color: transparent; -webkit-text-stroke: 1px var(--c-cyan);">
+        • UI/UX DESIGNER • FRONTEND DEVELOPER • GSAP ANIMATOR • CREATIVE THINKER • UI/UX DESIGNER • FRONTEND DEVELOPER •
+        GSAP ANIMATOR • CREATIVE THINKER
+      </h2>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills-section" id="skills">
+    <div class="container">
+      <p class="section-label reveal">// 01. Skills</p>
+      <h2 class="section-title reveal">My <em>Toolkit</em></h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="skill-category">
+            <div class="skill-cat-label">UI/UX Design</div>
+            <span class="skill-tag skill-tag-cyan">User Research</span>
+            <span class="skill-tag skill-tag-cyan">Wireframing</span>
+            <span class="skill-tag skill-tag-cyan">Prototyping</span>
+            <span class="skill-tag skill-tag-cyan">Design Systems</span>
+            <span class="skill-tag skill-tag-cyan">Interaction Design</span>
+            <span class="skill-tag skill-tag-cyan">Usability Testing</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="skill-category">
+            <div class="skill-cat-label">Design Tools</div>
+            <span class="skill-tag skill-tag-lavender">Figma</span>
+            <span class="skill-tag skill-tag-lavender">Framer</span>
+            <span class="skill-tag skill-tag-lavender">Spline</span>
+            <span class="skill-tag skill-tag-lavender">Adobe XD</span>
+            <span class="skill-tag skill-tag-lavender">Photoshop</span>
+            <span class="skill-tag skill-tag-lavender">Illustrator</span>
+            <span class="skill-tag skill-tag-lavender">Canva</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="skill-category">
+            <div class="skill-cat-label">Dev Stack</div>
+            <span class="skill-tag skill-tag-lime">HTML5</span>
+            <span class="skill-tag skill-tag-lime">CSS3</span>
+            <span class="skill-tag skill-tag-lime">JavaScript</span>
+            <span class="skill-tag skill-tag-lime">Bootstrap 5</span>
+            <span class="skill-tag skill-tag-lime">Tailwind CSS</span>
+            <span class="skill-tag skill-tag-lime">GSAP</span>
+            <span class="skill-tag skill-tag-lime">Angular</span>
+            <span class="skill-tag skill-tag-lime">Laravel</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="skill-category">
+            <div class="skill-cat-label">Productivity</div>
+            <span class="skill-tag skill-tag-mint">GitHub</span>
+            <span class="skill-tag skill-tag-mint">VS Code</span>
+            <span class="skill-tag skill-tag-mint">Notion</span>
+            <span class="skill-tag skill-tag-mint">Jira</span>
+            <span class="skill-tag skill-tag-mint">Miro</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK GALLERY -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <p class="section-label reveal">// Gallery</p>
+      <h2 class="section-title reveal">Work <em>Gallery</em></h2>
+
+      <!-- Page 1 -->
+      <div class="row g-4 gallery-page" id="gallery-page-1">
+        <!-- Gallery Item 1 -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="gallery-card">
+            <div class="gallery-img-wrap">
+              <iframe src="https://www.behance.net/embed/project/169738129?ilo0=1" height="316" width="440"
+                allowfullscreen lazyload frameborder="0" allow="clipboard-write"
+                refererPolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+
+          </div>
+        </div>
+        <!-- Gallery Item 2 -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="gallery-card">
+            <div class="gallery-img-wrap">
+              <iframe src="https://www.behance.net/embed/project/180426791?ilo0=1" height="316" width="440"
+                allowfullscreen lazyload frameborder="0" allow="clipboard-write"
+                refererPolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+
+          </div>
+        </div>
+        <!-- Gallery Item 3 -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="gallery-card">
+            <div class="gallery-img-wrap">
+              <iframe src="https://www.behance.net/embed/project/179457821?ilo0=1" height="316" width="430"
+                allowfullscreen lazyload frameborder="0" allow="clipboard-write"
+                refererPolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+
+          </div>
+        </div>
+        <!-- Gallery Item 4 -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="gallery-card">
+            <div class="gallery-img-wrap">
+              <iframe src="https://www.behance.net/embed/project/177176011?ilo0=1" height="316" width="430"
+                allowfullscreen lazyload frameborder="0" allow="clipboard-write"
+                refererPolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+
+          </div>
+        </div>
+        <!-- Gallery Item 5 -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="gallery-card">
+            <div class="gallery-img-wrap">
+              <iframe src="https://www.behance.net/embed/project/184809847?ilo0=1" height="316" width="430"
+                allowfullscreen lazyload frameborder="0" allow="clipboard-write"
+                refererPolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+
+          </div>
+        </div>
+        <!-- Gallery Item 6 -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="gallery-card">
+            <div class="gallery-img-wrap">
+              <iframe src="https://www.behance.net/embed/project/224073011?ilo0=1" height="316" width="430"
+                allowfullscreen lazyload frameborder="0" allow="clipboard-write"
+                refererPolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- Page 2 (Add your next 6 elements here) -->
+      <div class="row g-4 gallery-page" id="gallery-page-2" style="display: none;">
+        <!-- Gallery Item 1 -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="gallery-card">
+            <div class="gallery-img-wrap">
+              <iframe src="https://www.behance.net/embed/project/179582903?ilo0=1" height="316" width="440"
+                allowfullscreen lazyload frameborder="0" allow="clipboard-write"
+                refererPolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+
+          </div>
+        </div>
+        <!-- Gallery Item 2 -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="gallery-card">
+            <div class="gallery-img-wrap">
+              <iframe src="https://www.behance.net/embed/project/175517811?ilo0=1" height="316" width="440"
+                allowfullscreen lazyload frameborder="0" allow="clipboard-write"
+                refererPolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+
+          </div>
+        </div>
+        <!-- Gallery Item 3 -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="gallery-card">
+            <div class="gallery-img-wrap">
+              <iframe src="https://www.behance.net/embed/project/175205551?ilo0=1" height="316" width="440"
+                allowfullscreen lazyload frameborder="0" allow="clipboard-write"
+                refererPolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+
+          </div>
+        </div>
+        <!-- Gallery Item 4 -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="gallery-card">
+            <div class="gallery-img-wrap">
+              <iframe src="https://www.behance.net/embed/project/177176011?ilo0=1" height="316" width="430"
+                allowfullscreen lazyload frameborder="0" allow="clipboard-write"
+                refererPolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+
+          </div>
+        </div>
+        <!-- Gallery Item 5 -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="gallery-card">
+            <div class="gallery-img-wrap">
+              <iframe src="https://www.behance.net/embed/project/184809847?ilo0=1" height="316" width="430"
+                allowfullscreen lazyload frameborder="0" allow="clipboard-write"
+                refererPolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+
+          </div>
+        </div>
+        <!-- Gallery Item 6 -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="gallery-card">
+            <div class="gallery-img-wrap">
+              <iframe src="https://www.behance.net/embed/project/224073011?ilo0=1" height="316" width="430"
+                allowfullscreen lazyload frameborder="0" allow="clipboard-write"
+                refererPolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 3 (Add your next 6 elements here) -->
+      <div class="row g-4 gallery-page" id="gallery-page-3" style="display: none;">
+        <!-- Gallery Item 1 -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="gallery-card">
+            <div class="gallery-img-wrap">
+              <iframe src="https://www.behance.net/embed/project/169738129?ilo0=1" height="316" width="440"
+                allowfullscreen lazyload frameborder="0" allow="clipboard-write"
+                refererPolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+
+          </div>
+        </div>
+        <!-- Gallery Item 2 -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="gallery-card">
+            <div class="gallery-img-wrap">
+              <iframe src="https://www.behance.net/embed/project/175517811?ilo0=1" height="316" width="440"
+                allowfullscreen lazyload frameborder="0" allow="clipboard-write"
+                refererPolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+
+          </div>
+        </div>
+        <!-- Gallery Item 3 -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="gallery-card">
+            <div class="gallery-img-wrap">
+              <iframe src="https://www.behance.net/embed/project/179457821?ilo0=1" height="316" width="430"
+                allowfullscreen lazyload frameborder="0" allow="clipboard-write"
+                refererPolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+
+          </div>
+        </div>
+        <!-- Gallery Item 4 -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="gallery-card">
+            <div class="gallery-img-wrap">
+              <iframe src="https://www.behance.net/embed/project/177176011?ilo0=1" height="316" width="430"
+                allowfullscreen lazyload frameborder="0" allow="clipboard-write"
+                refererPolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+
+          </div>
+        </div>
+        <!-- Gallery Item 5 -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="gallery-card">
+            <div class="gallery-img-wrap">
+              <iframe src="https://www.behance.net/embed/project/184809847?ilo0=1" height="316" width="430"
+                allowfullscreen lazyload frameborder="0" allow="clipboard-write"
+                refererPolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+
+          </div>
+        </div>
+        <!-- Gallery Item 6 -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="gallery-card">
+            <div class="gallery-img-wrap">
+              <iframe src="https://www.behance.net/embed/project/224073011?ilo0=1" height="316" width="430"
+                allowfullscreen lazyload frameborder="0" allow="clipboard-write"
+                refererPolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Pagination -->
+    <div class="d-flex justify-content-center mt-5 pt-3 reveal">
+      <nav aria-label="Gallery pagination">
+        <ul class="pagination custom-pagination mb-0">
+          <li class="page-item disabled page-prev">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i class="bi bi-chevron-left"></i></a>
+          </li>
+          <li class="page-item active page-number" data-page="1"><a class="page-link" href="#">1</a></li>
+          <li class="page-item page-number" data-page="2"><a class="page-link" href="#">2</a></li>
+          <li class="page-item page-number" data-page="3"><a class="page-link" href="#">3</a></li>
+          <li class="page-item page-next">
+            <a class="page-link" href="#"><i class="bi bi-chevron-right"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <p class="section-label reveal">// 02. Experience</p>
+      <h2 class="section-title reveal">Work <em>History</em></h2>
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+
+          <div class="exp-card reveal">
+            <div class="exp-dot"></div>
+            <div class="exp-period">NOV 2023 — MAR 2026</div>
+            <div class="exp-title">UI/UX Designer &amp; UI Developer</div>
+            <div class="exp-company">Firebee Techno Services · Madurai</div>
+            <div>
+              <div class="exp-li">2.5+ years specialising in crypto and blockchain-based platform design</div>
+              <div class="exp-li">Designed intuitive dashboards, wallet interfaces and DeFi product experiences</div>
+              <div class="exp-li">Created wireframes, user flows and high-fidelity prototypes using Figma</div>
+              <div class="exp-li">Built responsive UI and animations using Bootstrap 5, Tailwind, GSAP, Angular &amp;
+                Laravel</div>
+              <div class="exp-li">Collaborated with blockchain devs to improve usability &amp; accessibility</div>
+            </div>
+          </div>
+
+          <div class="exp-card reveal" style="border-left-color:var(--c-lavender)">
+            <div class="exp-dot" style="background:var(--c-lavender)"></div>
+            <div class="exp-period">MAR 2022 — NOV 2023</div>
+            <div class="exp-title">PHP Developer</div>
+            <div class="exp-company">IT Flex Solutions · Madurai</div>
+            <div>
+              <div class="exp-li">Built and maintained web applications using CodeIgniter 4 framework</div>
+              <div class="exp-li">Developed backend features with PHP &amp; MySQL including auth systems and CRUD
+                modules</div>
+              <div class="exp-li">Built REST APIs and integrated frontend UI with backend services</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <p class="section-label reveal">// 03. Projects</p>
+      <h2 class="section-title reveal">Selected <em>Work</em></h2>
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="project-card">
+            <div class="project-card-header">
+              <div class="project-num">01</div>
+              <div class="project-title">Voltuum</div>
+              <div style="font-size:0.85rem;color:var(--text-muted)">Crypto Payment Gateway</div>
+              <div class="project-tech">
+                <span class="tech-pill">Angular</span>
+                <span class="tech-pill">Figma</span>
+                <span class="tech-pill">Bootstrap 5</span>
+                <span class="tech-pill">Animate.css</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.6">Designed &amp; developed a crypto
+                payment platform focusing on intuitive payment workflows and a clean UI kit.</p>
+              <a href="http://voltuum.yoursdemo.com" target="_blank" class="project-link">View Live → </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="project-card">
+            <div class="project-card-header" style="border-bottom-color:rgba(209,244,5,0.2)">
+              <div class="project-num">02</div>
+              <div class="project-title">Betfire</div>
+              <div style="font-size:0.85rem;color:var(--text-muted)">Sports Betting API Platform</div>
+              <div class="project-tech">
+                <span class="tech-pill">Angular</span>
+                <span class="tech-pill">Figma</span>
+                <span class="tech-pill">Bootstrap 5</span>
+                <span class="tech-pill">CSS</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.6">Designed the landing page UI for a
+                sports betting API with modern layouts and responsive components.</p>
+              <a href="http://betfire.live" target="_blank" class="project-link" style="color:var(--c-lime)">View Live →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="project-card">
+            <div class="project-card-header">
+              <div class="project-num">03</div>
+              <div class="project-title">Algonav</div>
+              <div style="font-size:0.85rem;color:var(--text-muted)">Crypto Trading Bot Platform</div>
+              <div class="project-tech">
+                <span class="tech-pill">Angular</span>
+                <span class="tech-pill">Figma</span>
+                <span class="tech-pill">wowjs</span>
+                <span class="tech-pill">Bootstrap 5</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.6">Full UI/UX design for trading bot
+                platform — landing page, user &amp; admin dashboards with analytics.</p>
+              <a href="http://algonav.yoursdemo.com" target="_blank" class="project-link"
+                style="color:var(--c-lavender)">View Live → </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="project-card">
+            <div class="project-card-header">
+              <div class="project-num">04</div>
+              <div class="project-title">Uniswap Clone</div>
+              <div style="font-size:0.85rem;color:var(--text-muted)">Web3 Frontend Practice</div>
+              <div class="project-tech">
+                <span class="tech-pill">Angular</span>
+                <span class="tech-pill">HTML/CSS</span>
+                <span class="tech-pill">Bootstrap 5</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.6">Pixel-perfect recreation of Uniswap
+                DEX — swap interface, token selection modal, wallet screens.</p>
+              <a href="#" class="project-link" style="color:var(--c-mint)">View Project → </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <p class="section-label reveal">// 04. Education</p>
+      <h2 class="section-title reveal">Learning <em>Path</em></h2>
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+
+          <div class="edu-card reveal">
+            <div class="edu-icon" style="background:rgba(8,237,213,0.1); color: var(--c-cyan)"><i
+                class="bi bi-mortarboard"></i></div>
+            <div>
+              <div class="edu-year">2018 — 2021</div>
+              <div class="edu-title">Bachelor of Arts — BA Economics</div>
+              <div class="edu-place">Madurai Kamaraj University · Madurai</div>
+            </div>
+          </div>
+
+          <div class="edu-card reveal">
+            <div class="edu-icon" style="background:rgba(209,244,5,0.1); color: var(--c-lime)"><i
+                class="bi bi-laptop"></i></div>
+            <div>
+              <div class="edu-year">2022</div>
+              <div class="edu-title">Web Development Course Certificate</div>
+              <div class="edu-place">Kalvi Institute · Madurai</div>
+            </div>
+          </div>
+
+          <div class="edu-card reveal">
+            <div class="edu-icon" style="background:rgba(206,177,255,0.1); color: var(--c-lavender)"><i
+                class="bi bi-pen"></i></div>
+            <div>
+              <div class="edu-year">2023</div>
+              <div class="edu-title">UI/UX Designer Course Certificate</div>
+              <div class="edu-place">Image Creative Education · Madurai</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact" style="background:var(--card-bg)">
+    <div class="container">
+      <p class="section-label reveal">// 05. Contact</p>
+      <h2 class="section-title reveal">Let's <em>Connect</em></h2>
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="contact-grid reveal">
+            <a href="mailto:karunanithi.uiux@gmail.com" class="contact-item">
+              <div class="contact-icon"><i class="bi bi-envelope"></i></div>
+              <div class="contact-label">Email</div>
+              <div class="contact-value">karunanithi.uiux@gmail.com</div>
+            </a>
+            <a href="tel:6383292665" class="contact-item">
+              <div class="contact-icon"><i class="bi bi-telephone"></i></div>
+              <div class="contact-label">Phone</div>
+              <div class="contact-value">+91 63832 92665</div>
+            </a>
+            <a href="https://linkedin.com/in/karunanidhi-uiux-developer" target="_blank" class="contact-item">
+              <div class="contact-icon"><i class="bi bi-linkedin"></i></div>
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-value">karunanidhi-uiux-developer</div>
+            </a>
+            <a href="https://github.com/karunanithi-uiux-developer" target="_blank" class="contact-item">
+              <div class="contact-icon"><i class="bi bi-github"></i></div>
+              <div class="contact-label">GitHub</div>
+              <div class="contact-value">karunanithi-uiux-developer</div>
+            </a>
+            <a href="https://karunanithi.framer.website/" target="_blank" class="contact-item">
+              <div class="contact-icon"><i class="bi bi-globe"></i></div>
+              <div class="contact-label">Website</div>
+              <div class="contact-value">karunanithi.framer.website</div>
+            </a>
+            <a href="https://behance.net/karunanithi-uix-dev" target="_blank" class="contact-item">
+              <div class="contact-icon"><i class="bi bi-behance"></i></div>
+              <div class="contact-label">Behance</div>
+              <div class="contact-value">karunanithi-uix-dev</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="karu-footer">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap gap-2">
+      <span>© 2025 Karunanithi. Built with Bootstrap 5 + GSAP.</span>
+      <span style="color:var(--c-cyan)">Madurai, Tamil Nadu</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger, TextPlugin);
+
+    // Hero entrance
+    const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+    tl.fromTo(".hero .reveal", { opacity: 0, y: 50 }, {
+      opacity: 1, y: 0, duration: 0.9, stagger: 0.12, delay: 0.3
+    });
+
+    // Text Type Animation
+    gsap.to("#typewriter-role", {
+      text: "UI/UX Designer & Frontend Developer",
+      duration: 1.5,
+      ease: "none",
+      delay: 1.2
+    });
+    gsap.to("#typewriter-desc", {
+      text: "2.5+ years crafting intuitive blockchain & crypto interfaces. Specialising in Figma design systems, Angular development, and GSAP animations.",
+      duration: 2.5,
+      ease: "none",
+      delay: 2.8
+    });
+
+    // Start to End Marquee Scroll Animation
+    gsap.to(".massive-text", {
+      xPercent: -50,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".scroll-text-section",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 1
+      }
+    });
+
+    // Scroll reveals
+    gsap.utils.toArray("section:not(#hero) .reveal").forEach(el => {
+      gsap.fromTo(el, { opacity: 0, y: 40 }, {
+        opacity: 1, y: 0, duration: 0.8, ease: "power3.out",
+        scrollTrigger: {
+          trigger: el, start: "top 88%", toggleActions: "play none none none"
+        }
+      });
+    });
+
+    // Nav link active
+    gsap.utils.toArray(".nav-link-item").forEach(link => {
+      link.addEventListener("click", e => {
+        document.querySelectorAll(".nav-link-item").forEach(l => l.style.color = "");
+        link.style.color = "var(--c-cyan)";
+      });
+    });
+
+    // Skill tags stagger on reveal
+    document.querySelectorAll(".skill-category").forEach(card => {
+      ScrollTrigger.create({
+        trigger: card, start: "top 85%",
+        onEnter: () => {
+          gsap.fromTo(card.querySelectorAll(".skill-tag"), { opacity: 0, scale: 0.8 }, {
+            opacity: 1, scale: 1, duration: 0.4, stagger: 0.06, ease: "back.out(1.7)"
+          });
+        }
+      });
+    });
+
+    // Project cards on scroll
+    gsap.utils.toArray(".project-card").forEach((card, i) => {
+      gsap.fromTo(card, { opacity: 0, y: 60 }, {
+        opacity: 1, y: 0, duration: 0.7,
+        delay: i * 0.1, ease: "power3.out",
+        scrollTrigger: { trigger: card, start: "top 90%" }
+      });
+    });
+
+    // Experience line draw
+    gsap.fromTo(".exp-card", { x: -40, opacity: 0 }, {
+      x: 0, opacity: 1, duration: 0.7, stagger: 0.2, ease: "power3.out",
+      scrollTrigger: { trigger: "#experience", start: "top 70%" }
+    });
+
+    // Color bar animate
+    gsap.fromTo(".color-bar div", { scaleX: 0, transformOrigin: "left" }, {
+      scaleX: 1, duration: 1.5, stagger: 0.1, ease: "power2.out", delay: 0.1
+    });
+
+    // Photo frame float
+    gsap.to(".photo-frame", {
+      y: -12, duration: 3, ease: "sine.inOut", yoyo: true, repeat: -1
+    });
+    gsap.to(".photo-accent-1", {
+      y: -8, x: 5, duration: 4, ease: "sine.inOut", yoyo: true, repeat: -1, delay: 0.5
+    });
+
+    // Custom cursor
+    const cursor = document.getElementById("cursor");
+    const ring = document.getElementById("cursorRing");
+    let mx = 0, my = 0, rx = 0, ry = 0;
+    window.addEventListener("mousemove", e => {
+      mx = e.clientX; my = e.clientY;
+      cursor.style.left = mx - 5 + "px";
+      cursor.style.top = my - 5 + "px";
+    });
+    function animRing() {
+      rx += (mx - rx) * 0.1;
+      ry += (my - ry) * 0.1;
+      ring.style.left = rx - 18 + "px";
+      ring.style.top = ry - 18 + "px";
+      requestAnimationFrame(animRing);
+    }
+    animRing();
+    document.querySelectorAll("a, button, .project-card, .skill-category").forEach(el => {
+      el.addEventListener("mouseenter", () => {
+        cursor.style.transform = "scale(2.5)";
+        ring.style.transform = "scale(1.5)";
+        ring.style.opacity = "0.8";
+      });
+      el.addEventListener("mouseleave", () => {
+        cursor.style.transform = "scale(1)";
+        ring.style.transform = "scale(1)";
+        ring.style.opacity = "0.5";
+      });
+    });
+
+    // Theme toggle
+    const toggle = document.getElementById("themeToggle");
+    toggle.addEventListener("click", () => {
+      const html = document.documentElement;
+      const isDark = html.getAttribute("data-bs-theme") === "dark";
+      html.setAttribute("data-bs-theme", isDark ? "light" : "dark");
+      toggle.textContent = isDark ? "◑ Toggle Theme" : "◐ Toggle Theme";
+
+      // Update logo based on theme
+      document.querySelectorAll(".site-logo").forEach(logo => {
+        logo.src = isDark ? "img/black.png" : "img/white.png";
+      });
+
+      gsap.fromTo("body", { opacity: 0.7 }, { opacity: 1, duration: 0.4 });
+    });
+
+    // Section title char split animation
+    document.querySelectorAll(".section-title").forEach(title => {
+      ScrollTrigger.create({
+        trigger: title, start: "top 85%",
+        onEnter: () => {
+          gsap.fromTo(title, { clipPath: "inset(0 100% 0 0)" }, {
+            clipPath: "inset(0 0% 0 0)", duration: 0.8, ease: "power3.out"
+          });
+        }
+      });
+    });
+
+    // Gallery Pagination Flow
+    const galleryPages = document.querySelectorAll(".gallery-page");
+    const pageNavNumbers = document.querySelectorAll(".page-number");
+    const prevNavBtn = document.querySelector(".page-prev");
+    const nextNavBtn = document.querySelector(".page-next");
+    let currentGalleryPageNum = 1;
+    const totalGalleryPages = galleryPages.length;
+
+    function renderGalleryPageNav(pageStr) {
+      const page = parseInt(pageStr);
+      if (page < 1 || page > totalGalleryPages) return;
+      currentGalleryPageNum = page;
+
+      // Hide all, show targeted
+      galleryPages.forEach((p, idx) => {
+        if (idx + 1 === page) {
+          p.style.display = "flex";
+          p.style.opacity = "0";
+          gsap.to(p, { opacity: 1, duration: 0.4, ease: "power2.out" });
+        } else {
+          p.style.display = "none";
+        }
+      });
+
+      // Update Pagination classes
+      pageNavNumbers.forEach(n => {
+        if (parseInt(n.dataset.page) === page) {
+          n.classList.add("active");
+        } else {
+          n.classList.remove("active");
+        }
+      });
+
+      // Disable logic
+      if (page === 1) {
+        prevNavBtn.classList.add("disabled");
+        prevNavBtn.querySelector("a").setAttribute("aria-disabled", "true");
+        prevNavBtn.querySelector("a").setAttribute("tabindex", "-1");
+      } else {
+        prevNavBtn.classList.remove("disabled");
+        prevNavBtn.querySelector("a").removeAttribute("aria-disabled");
+        prevNavBtn.querySelector("a").removeAttribute("tabindex");
+      }
+
+      if (page === totalGalleryPages) {
+        nextNavBtn.classList.add("disabled");
+        nextNavBtn.querySelector("a").setAttribute("aria-disabled", "true");
+        nextNavBtn.querySelector("a").setAttribute("tabindex", "-1");
+      } else {
+        nextNavBtn.classList.remove("disabled");
+        nextNavBtn.querySelector("a").removeAttribute("aria-disabled");
+        nextNavBtn.querySelector("a").removeAttribute("tabindex");
+      }
+    }
+
+    pageNavNumbers.forEach(btn => {
+      btn.addEventListener("click", e => {
+        e.preventDefault();
+        renderGalleryPageNav(btn.dataset.page);
+        document.getElementById("gallery").scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    prevNavBtn.addEventListener("click", e => {
+      e.preventDefault();
+      if (currentGalleryPageNum > 1) {
+        renderGalleryPageNav(currentGalleryPageNum - 1);
+        document.getElementById("gallery").scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+
+    nextNavBtn.addEventListener("click", e => {
+      e.preventDefault();
+      if (currentGalleryPageNum < totalGalleryPages) {
+        renderGalleryPageNav(currentGalleryPageNum + 1);
+        document.getElementById("gallery").scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+
+  </script>
+</body>
+
+</html>
